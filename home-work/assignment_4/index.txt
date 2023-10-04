@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">BGIT Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m1-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+     <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">contact</a></li>
+                            <li><a class="dropdown-item" href="#">footer</a></li>
+                            <li>
+                            <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+
+
+
+:root {
+  --text: #250e1c;
+  --background: #f4e2ec;
+  --primary: #a5407d;
+  --secondary: #efd7e5;
+  --accent: #b44688;
+  --text: #270128;
+  --background: #fee1fe;
+  --primary: #b104b4;
+  --secondary: #fdcdfe;
+  --accent: #f605fa;
+
+  --text: #000000;
+  --background: #ffdce0;
+  --primary: #fd4e63;
+  --secondary: #fe9aa6;
+  --accent: #ca0219;
+
+  --text: #010909;
+  --background: #dcf9f9;
+  --primary: #116969;
+  --secondary: #bdf4f4;
+  --accent: #20c5c5;
+
+  --text: #21020d;
+  --background: #fde2ec;
+  --primary: #a70c42;
+  --secondary: #f9a4c2;
+  --accent: #c40e4d;
+}
+
+<h5 class="card-title">e-commerce stores</h5>
+<h5 class="card-title">website management</h5>
+<h5 class="card-title">responsive design</h5>
