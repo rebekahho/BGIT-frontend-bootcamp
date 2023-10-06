@@ -58,6 +58,7 @@
   --primary: #a5407d;
   --secondary: #efd7e5;
   --accent: #b44688;
+  
   --text: #270128;
   --background: #fee1fe;
   --primary: #b104b4;

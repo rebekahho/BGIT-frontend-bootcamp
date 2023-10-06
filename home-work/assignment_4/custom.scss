@@ -8,11 +8,11 @@
 @import "node_modules/bootstrap/scss/functions";
 
 // Default variable
-$background: #f4e2ec;
-$text: #250e1c;
-$primary: #a5407d;
-$secondary: #efd7e5;
-$accent: #b44688;
+$text: #010909;
+$background: #dcf9f9;
+$primary: #116969;
+$secondary: #bdf4f4;
+$accent: #20c5c5;
 
 body {
   font-family: 'Kiwi Maru';
@@ -53,6 +53,8 @@ body{
     overflow-x: hidden;
 }
 
+
+// NAV SECTION
 header {
     z-index: 3;
 }
@@ -100,7 +102,7 @@ header {
 }
 
 
-/* hero section */
+/* HERO SECTION */
 .hero {
     position: relative;
     height: 100vh;
@@ -187,6 +189,7 @@ header {
     }
 }
 
+// SERVICES SECTION
 .service-btn {
     background-color: $primary;
     color: $secondary;
@@ -222,6 +225,7 @@ header {
     }
 }
 
+// FOOTER SECTION
 footer {
     background: $primary;
 }
@@ -253,7 +257,7 @@ footer p {
     }
   
     .logo {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     .lead {

@@ -11862,7 +11862,7 @@ textarea.form-control-lg {
 body {
   font-family: "Kiwi Maru";
   font-weight: 400;
-  color: #250e1c;
+  color: #010909;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
@@ -11907,8 +11907,8 @@ html {
 }
 
 body {
-  background-color: #f4e2ec;
-  color: #250e1c;
+  background-color: #dcf9f9;
+  color: #010909;
   overflow-x: hidden;
 }
 
@@ -11917,7 +11917,7 @@ header {
 }
 
 .logo {
-  color: #efd7e5;
+  color: #bdf4f4;
   font-family: "Milonga";
   font-weight: 800;
   letter-spacing: 0.4rem;
@@ -11926,11 +11926,11 @@ header {
 }
 
 .logo:hover {
-  color: #efd7e5;
+  color: #bdf4f4;
 }
 
 .nav_bar {
-  background-color: #250e1c;
+  background-color: #010909;
 }
 
 .nav__bar {
@@ -11938,27 +11938,27 @@ header {
 }
 
 .nav__bar a {
-  color: #f4e2ec;
+  color: #dcf9f9;
 }
 
 .nav__bar a:hover {
-  color: #a5407d;
-  background-color: #efd7e5;
+  color: #116969;
+  background-color: #bdf4f4;
   transition: ease-in-out 0.7s;
   border-radius: 0.5rem;
 }
 
 .hamburger {
-  color: #f4e2ec;
+  color: #dcf9f9;
 }
 
 @media (max-width: 991px) {
   .sidebar {
-    background: #a5407d;
+    background: #116969;
     backdrop-filter: blur(10px);
   }
 }
-/* hero section */
+/* HERO SECTION */
 .hero {
   position: relative;
   height: 100vh;
@@ -11986,7 +11986,7 @@ header {
   left: 0%;
   height: 100vh;
   bottom: 0%;
-  background-color: #250e1c;
+  background-color: #010909;
   opacity: 0.5;
   z-index: 1;
 }
@@ -12031,7 +12031,7 @@ header {
 }
 
 .hero_scroll-btn:hover {
-  color: #a5407d;
+  color: #116969;
   opacity: 0.8;
 }
 
@@ -12049,27 +12049,27 @@ header {
   }
 }
 .service-btn {
-  background-color: #a5407d;
-  color: #efd7e5;
+  background-color: #116969;
+  color: #bdf4f4;
 }
 
 .service-btn:hover {
-  background-color: #efd7e5;
-  color: #250e1c;
+  background-color: #bdf4f4;
+  color: #010909;
 }
 
 .sub__btn {
-  background-color: #250e1c;
+  background-color: #010909;
   border: none;
   display: block;
   margin: auto;
   width: 95%;
   overflow: hidden;
-  color: #efd7e5;
+  color: #bdf4f4;
 }
 
 .sub__btn:hover {
-  background-color: #a5407d;
+  background-color: #116969;
   transition: ease-in-out 0.4s;
 }
 
@@ -12078,23 +12078,23 @@ header {
     width: 93%;
   }
   .sub__btn:hover {
-    color: #250e1c;
+    color: #010909;
   }
 }
 footer {
-  background: #a5407d;
+  background: #116969;
 }
 
 .social-icons i {
-  color: #250e1c;
-  background-color: #b44688;
+  color: #010909;
+  background-color: #20c5c5;
   font-size: 1.5rem;
   margin: 1rem 0;
   padding: 0.7rem;
 }
 
 .social-icons i:hover {
-  background-color: #b44688;
+  background-color: #20c5c5;
   transition: ease-in-out 0.3s;
 }
 
@@ -12109,7 +12109,7 @@ footer p {
     width: 100%;
   }
   .logo {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .lead {
     text-align: center;
