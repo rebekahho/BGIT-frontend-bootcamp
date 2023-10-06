@@ -45,5 +45,5 @@ While building this project, I was able to explore various bootstrap component a
 
 ### Built With
 
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![Sass][sass-lang.com]][Sass-url]
+* [![Bootstrap][Bootstrap.com]][https://getbootstrap.com/docs/5.3/components/progress/]
+* [![Sass][sass-lang.com]][https://sass-lang.com/]
