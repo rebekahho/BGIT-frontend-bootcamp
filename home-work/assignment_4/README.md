@@ -23,13 +23,14 @@ I designed the layout of the portfolio website using Bootstrap's container and g
 
 I made sure I used proper indentation and comments in my CSS code to improve readability. I also used media queries to make sure the webpage has flexible layouts that adapt to each user’s device.
 
-#Links
+# Links
 google font link: https://fonts.google.com/?query=barlow 
 image link: https://unsplash.com/
 colors and theme: https://realtimecolors.com/?colors=000000-ffffff-8fb3ff-ebf1ff-d41d6d
 
 # What I learnt
 While building this project, I was able to explore various bootstrap component and how to compile sass into my stylesheet. 
+I also learnt how to add an overlay color and text to hero images and make it more visually apealing.
 
 ### Built With
 
