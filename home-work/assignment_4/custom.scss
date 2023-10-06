@@ -190,6 +190,10 @@ header {
 }
 
 // SERVICES SECTION
+.services_card:hover {
+    box-shadow: 5px 10px 18px #888888;
+}
+
 .service-btn {
     background-color: $primary;
     color: $secondary;
