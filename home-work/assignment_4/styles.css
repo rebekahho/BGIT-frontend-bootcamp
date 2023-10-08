@@ -11949,7 +11949,7 @@ header {
 }
 
 .hamburger {
-  color: #dcf9f9;
+  background-color: #dcf9f9;
 }
 
 @media (max-width: 991px) {
