@@ -11,6 +11,6 @@ function changeColor () {
     currentColor++;
     if (currentColor >= colors.length) {
         currentColor = 0;
-    }
+    };
 }
 
