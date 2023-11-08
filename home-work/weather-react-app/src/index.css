@@ -1,0 +1,8 @@
+body {
+  margin: 0 auto;
+  width: 80%;
+  font-family: "Roboto", Arial;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ff5b22;
+  color: #000;
+}
