@@ -1,3 +1,4 @@
+/* styling the title */
 .title {
   font-size: 23px;
   font-weight: 700;
@@ -31,6 +32,7 @@
   margin-left: 15px;
 }
 
+/* styling the descritption section */
 .description {
   cursor: inherit;
   flex: 1 1;
@@ -42,6 +44,7 @@
   color: #757575;
 }
 
+/* styling the daily forecast section */
 .daily-details-grid {
   grid-row-gap: 0;
   grid-column-gap: 15px;
