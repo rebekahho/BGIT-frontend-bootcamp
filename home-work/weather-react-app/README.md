@@ -1,6 +1,9 @@
 # Weather React App
 
-In this assignment, we were asked to build a weather app with React and API Integration. I applied the concept of React, state management, API fetching, and conditional rendering to create this weather forecast applicaition. The API key that was used in this website was gotten from RapidApi.
+In this assignment, we were asked to build a weather app with React and API Integration. I applied the concept of React, state management, API fetching, and conditional rendering to create this weather forecast applicaition. The API key that was used in this website was gotten from:
+
+[] OpenWeather Api: https://openweathermap.org/
+[] GeoDB Cities Api: https://rapidapi.com/wirefreethought/api/geodb-cities/
 
 I also applied CSS to style the website to make it more visually appealing. I used icons to represent different weather conditions.
 
