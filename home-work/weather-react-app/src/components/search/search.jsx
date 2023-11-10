@@ -3,11 +3,13 @@ import { AsyncPaginate } from "react-select-async-paginate";
 import { GEO_API_URL, geoApiOptions } from "../../api";
 
 const Search = ({ onSearchChange }) => {
+  // creating the search variable using useState hook
   const [search, setSearch] = useState(null);
 
+  // calling method for loading the options and retrieve the input value
   const loadOptions = (inputValue) => {
     return fetch(
-      `${GEO_API_URL}/cities?minPopulation=1000000&namePrefix=${inputValue}`,
+      `${GEO_API_URL}/cities?minPopulat on=1000000&namePrefix=${inputValue}`,
       geoApiOptions
     )
       .then((response) => response.json())
@@ -24,10 +26,13 @@ const Search = ({ onSearchChange }) => {
       .catch((err) => console.error(err));
   };
 
+  // creating the onChange value to fetch weather data and update our search
   const handleOnChange = (searchData) => {
     setSearch(searchData);
     onSearchChange(searchData);
   };
+
+  // search bar to search for cities
   return (
     <AsyncPaginate
       placeholder="search for city"

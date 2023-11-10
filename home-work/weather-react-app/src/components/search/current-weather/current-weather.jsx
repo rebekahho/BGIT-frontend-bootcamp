@@ -3,6 +3,7 @@ import "./current-weather.css";
 const CurrentWeather = ({ data }) => {
   return (
     <div className="weather">
+      {/* section to display current weather, city and icon to represent the weather condition */}
       <div className="top">
         <div>
           <p className="city">{data.city}</p>
@@ -14,6 +15,8 @@ const CurrentWeather = ({ data }) => {
           alt="weather"
         />
       </div>
+
+      {/* section to explain details of the weather */}
       <div className="bottom">
         <p className="temperature">{Math.round(data.main.temp)}°C</p>
         <div className="details">

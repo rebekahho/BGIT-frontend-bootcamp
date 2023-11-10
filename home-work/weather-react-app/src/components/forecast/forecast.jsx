@@ -28,6 +28,7 @@ const Forecast = ({ data }) => {
   return (
     <>
       <label className="title">Daily Forecast</label>
+      {/* accordion to display details of daily weather condition */}
       <Accordion allowZeroExpanded>
         {data.list.splice(0, 7).map((item, idx) => (
           <AccordionItem key={idx}>
@@ -50,6 +51,8 @@ const Forecast = ({ data }) => {
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
+
+            {/* items inside the accordion */}
             <AccordionItemPanel>
               <div className="daily-details-grid">
                 <div className="daily-details-grid-item">
