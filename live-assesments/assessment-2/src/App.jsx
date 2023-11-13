@@ -1,19 +1,14 @@
-import { Product } from "./components/product";
-import content from "./content";
-
 import "./App.css";
+import UserProfileCard from "./components/UserProfileCard";
 
 function App() {
   return (
-    <div className="App">
-      {content.map((content) => (
-        <Product
-          name={content.name}
-          avatarUrl={content.avatarUrl}
-          location={content.location}
-          age={content.age}
-        />
-      ))}
+    <div>
+      <UserProfileCard
+        name="Adegboye Rebecca"
+        age="14"
+        location="Lagos"
+      ></UserProfileCard>
     </div>
   );
 }
