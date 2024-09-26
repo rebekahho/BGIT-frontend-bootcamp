@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Norican:700|Norican:400');
+@import url('https://fonts.googleapis.com/css?family=Noto Sans Mro:700|Noto Sans Mro:400');
+@import url('https://fonts.googleapis.com/css?family=Kiwi Maru:700|Kiwi Maru:400');
+@import url('https://fonts.googleapis.com/css?family=Milonga:700|Milonga:400');
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "node_modules/bootstrap/scss/functions";
+
+// Default variable
+$text: #010909;
+$background: #dcf9f9;
+$primary: #116969;
+$secondary: #bdf4f4;
+$accent: #20c5c5;
+
+body {
+  font-family: 'Kiwi Maru';
+  font-weight: 400;
+  color: $text;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Kiwi Maru';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $background;
+    color: $text;
+    overflow-x: hidden;
+}
+
+
+// NAV SECTION
+header {
+    z-index: 3;
+}
+
+.logo {
+    color: $secondary;
+    font-family: 'Milonga';
+    font-weight: 800;
+    letter-spacing: .4rem;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.logo:hover {
+    color: $secondary;
+}
+
+.nav_bar {
+    background-color: $text;
+}
+.nav__bar {
+    text-transform: capitalize;
+}
+
+.nav__bar a {
+    color: $background;
+}
+
+.nav__bar a:hover {
+    color: $primary;
+    background-color: $secondary;
+    transition: ease-in-out .7s;
+    border-radius: .5rem;
+}
+
+.hamburger  {
+    background-color: $background;
+}
+
+@media (max-width:991px) {
+    .sidebar {
+        background: $primary;
+        backdrop-filter: blur(10px);
+    }
+}
+
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 100vh;
+    min-width: 100vw;
+}
+
+.hero img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    right: 0%;
+    min-width: 100vw;
+    min-height: 100%;
+    width: auto;
+    height: 100vh;
+    transform: translateX(-50%);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__overlay{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    height: 100vh;
+    bottom: 0%;
+    background-color: $text;
+    opacity: .5;
+    z-index: 1;
+}
+
+.hero__heading {
+    text-align: center;
+}
+.hero__content{
+    z-index: 1;
+}
+.hero__content-width{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.hero__content-width h1 {
+    font-size: 2rem;
+}
+
+.buy-btn {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.buy-btn:hover {
+    transition: ease-in-out 1s;
+}
+.hero_scroll-btn{
+    position: absolute;
+    left:50%;
+    bottom:30px;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--bs-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.hero_scroll-btn:hover{
+    color: $primary;
+    opacity: .8;
+}
+.hero_scroll-btn .bi{
+    transition-delay: .8s;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+// SERVICES SECTION
+.services_card:hover {
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.service-btn {
+    background-color: $primary;
+    color: $secondary;
+}
+
+.service-btn:hover {
+    background-color: $secondary;
+    color: $text;
+}
+
+.sub__btn {
+    background-color: $text;
+    border: none;
+    display: block;
+    margin: auto;
+    width: 95%;
+    overflow: hidden;
+    color: $secondary;
+}
+
+.sub__btn:hover {
+    background-color: $primary;
+    transition: ease-in-out .4s;
+}
+
+@media (max-width:800px) {
+    .sub__btn {
+        width: 93%;
+    }
+
+    .sub__btn:hover {
+        color: $text;
+    }
+}
+
+// FOOTER SECTION
+footer {
+    background: $primary;
+}
+
+.social-icons i {
+    color: $text;
+    background-color: $accent;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    padding: .7rem;
+}
+
+.social-icons i:hover {
+    background-color: $accent;
+    transition: ease-in-out .3s;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: .7rem 0;
+    padding-left: .7rem;
+}
+
+
+// responsiveness for tablets and smaller screens
+@media (max-width:600px) {
+    body {
+        width: 100%;
+    }
+  
+    .logo {
+      font-size: 1.8rem;
+    }
+
+    .lead {
+        text-align: center;
+    }
+
+    .buy-btn {
+        width: 50%;
+    }
+  
+    .hero img {
+      max-width: 100vw;
+      min-height: 100%;
+      width: auto;
+      height: 100vh;
+      transform: translateX(-50%);
+      background-position: center;
+      background-size: cover;
+    }
+  
+    .services_card {
+      margin: 0 auto;
+      width: 85%;
+    }
+  
+    .sub__btn {
+      width: 85%;
+    }
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Color Changer</title>
+
+    <!-- inline styling -->
+    <style>
+        body {
+            margin: 0 auto;
+            width: 80%;
+            background-color: #000;
+        }
+
+        div {
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        button {
+            background-color: darkred;
+            color: white;
+            padding: 1rem;
+            font-size: 1.5rem;
+            border: none;
+            text-transform: capitalize;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="text">Click the button to change the color</div>
+    <button onclick="changeColor()">change color</button>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.card_profile {
+  width: 50%;
+  margin: 0 auto;
+  height: 60vh;
+}
+
+.image {
+  width: 100%;
+}
+
+.card-details {
+  text-align: center;
+}

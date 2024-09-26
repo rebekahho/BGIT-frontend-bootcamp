@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Portfolio Website</title>
+    
+    <!-- link to font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+
+    <!-- link to bootstrap theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- link to my stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="position-absolute start-0 top-0 end-0">
+        <nav class="nav_bar navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <!-- logo -->
+                <a class="logo navbar-brand" href="#">tochi tech</a>
+                <!-- toggle btn -->
+                <button 
+                class="hamburger navbar-toggler shadow-none border-0" 
+                type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar" 
+                aria-controls="offcanvasNavbar" 
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- sidebar -->
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- sidebar header -->
+                    <div class="offcanvas-header border-bottom">
+                    <h5 class="logo offcanvas-title" id="offcanvasNavbarLabel">tochi tech</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <!-- sidebar body -->
+                    <div class="offcanvas-body">
+                    <ul class="nav__bar navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="#home">home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#services">services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2" href="#footer">footer</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- HERO SECTION START -->
+    <section class="hero" id="home">
+        <div class="hero__overlay"></div>
+        <img src="images/hero.jpg" alt="people typing with laptop">
+        <div class="hero__content h-100 position-relative">
+            <div class="d-flex h-100 justify-content-center align-items-center hero__content-width">
+                <div class="text-white para">
+                    <h1 class="hero__heading fw-bold mb-4">Creating Best Software Solutions</h1>
+                    <p class="lead mb-4">Tochi Tech is a creative web developing company. We aim to design functional creative and build attractive 
+                        and good looking websites. </p>
+                    <a href="mailto:adegboye.tosin.r@gmail.com" class="d-block mt-2 btn btn-lg btn-outline-light buy-btn">Book Us Now</a>
+                </div>
+            </div>
+        </div>
+        <a href="#scroll-down" class="hero_scroll-btn">
+            Explore <i class="bi bi-arrow-down-short"></i></a>
+        </a>
+    </section>
+    <a id="scroll-down"></a>
+    <!-- HERO SECTION END -->
+
+    <!-- SECTION ONE START -->
+    <section class="container text-center services my-4">
+        <h1 class="text-uppercase fs-1 text-center">services</h1>
+        <div class="row gap-4">
+            <div class="col col-md col-sm">
+                <div class="services_card card" style="width: 18rem;">
+                    <img src="images/ecommerce.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">e-commerce stores</h5>
+                        <p class="card-text">
+                            We help our clients to build website that accept orders, track inventory, 
+                            process payments, manage shipping, market your brand, and analyze your data.  
+                        </p>
+                      <a href="#" class="btn service-btn">Click here for more info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md col-sm">
+                <div class="services_card card" style="width: 18rem;">
+                    <img src="images/coding.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">website management</h5>
+                        <p class="card-text">
+                            We build revolutionized custom web design with 3d visuals. 90% seamless 
+                            functionality, 100% stunning aesthetics, 100% immersive, 0% forgettable experiences!
+                        </p>
+                      <a href="#" class="btn service-btn">Click here for more info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md col-sm">
+                <div class="services_card card" style="width: 18rem;">
+                    <img src="images/responsive.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">responsive design</h5>
+                        <p class="card-text">
+                            At our company, with the exceptional experiences our team had gathered over the years, 
+                            we build website that have flexible layouts that adapt to each user’s device.
+                        </p>
+                      <a href="#" class="btn service-btn">Click here for more info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION ONE END -->
+
+    <!-- SECTION TWO START -->
+    <div class="container-fluid m-4">
+        <h2 class="text-capitalize fs-2 mx-4">
+            what service can we offer your business?
+        </h2>
+        <div class="mx-4 mb-3">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter Your Name">
+        </div>
+        <div class="mb-3 mx-4">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <button type="submit" class="btn btn-lg sub__btn mx-4">Submit</button>
+    </div>
+    <!-- SECTION TWO END -->
+
+    <!-- FOOTER SECTION START-->
+    <footer class="container-fluid" id="footer">
+        <div class="d-flex justify-content-center align-items-center gap-2">
+            <div class="social-icons">
+                <a class="text-decoration-none" href="https://www.facebook.com/freecodecamp/">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-decoration-none" href="https://twitter.com/freecodecamp/">
+                <i class="fab fa-twitter"></i>
+                </a>
+                <a class="text-decoration-none" href="https://instagram.com/freecodecamp">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a class="text-decoration-none" href="https://www.linkedin.com/school/free-code-camp/">
+                <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="text-decoration-none" href="https://www.youtube.com/freecodecamp">
+                <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <hr class="border">
+        <div class="d-flex justify-content-center align-items-center">
+            <p>&copy 2023</p>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

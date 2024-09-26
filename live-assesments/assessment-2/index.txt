@@ -1,0 +1,45 @@
+1. React components are reusable bits of code. They serve the same purpose as JavaScript functions, 
+but work in isolation and return HTML. There are two types of components, Class components and Function components.
+React makes it easy to build interactive UIs. it designs simple views for each state in your application, and efficiently update and render just the right components when your data changes.
+
+2. JSX stands for JavaScript XML. JSX is a JavaScript Extension Syntax used in React to easily 
+write HTML and JavaScript together in react. An example of JSX code is written below:
+
+class JSXDemo extends React.Component {
+    render() {
+        return <h1>This is JSX</h1>;
+    }
+}
+
+ReactDOM.render(<JSXDemo />, document.getElementById('root'));
+
+The browser does not understand this code because it's not proper JavaScript code.
+this code can be converted to a browser understandable JavaScript code,a tool like Babel which is 
+a JavaScript compiler can be used.
+This is what you get after compiling
+
+class JSXDemo extends React.Component {
+    render() {
+        return React.createElement("h1", null, "This is JSX");
+    }
+}
+
+3. DOM stands for ‘Document Object Model’. React uses Virtual DOM exists which is like a 
+lightweight copy of the actual DOM(a virtual representation of the DOM). So for every object that exists in the original DOM, there is an object for that in React Virtual DOM.
+The Virtual DOM allows React to batch multiple updates together, reducing the number of actual DOM operations and improving performance.
+Instead of directly manipulating the real DOM, changes are first made to the virtual DOM, which is then compared to the real DOM to apply only the necessary changes.
+
+4.The three main phases of a react component`s lifecycle are Mounting, Updating, and Unmounting.
+a). Mounting: Mounting means putting elements into the DOM.
+b). Updating: The next phase in the lifecycle is when a component is updated.
+A component is updated whenever there is a change in the component's state or props.
+c). Unmounting: The next phase in the lifecycle is when a component is removed from the DOM, or unmounting as React likes to call it.
+
+5. Props are used to pass data from a parent component to a child component, while state is used to manage data within a component.
+Props are immutable and cannot be changed within a component, while state is mutable and can be updated using the setState function.
+I would use props whenever i want to to store data that can be accessed by the children of a React component and I would use state whenever i want to manage the data inside a component itself
+
+
+6. shouldComponentUpdate(prevProps, prevState): lifecycle method in React class components is used to control whether a component 
+should re-render or not. It allows you to optimize performance by preventing unnecessary re-renders when the component's props or state haven't changed.
+It makes the component re-render only when there is a change in the state or props of a component and that change will affect the output.
